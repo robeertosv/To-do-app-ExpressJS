@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pending .element {
+    border: 1px solid #000;
+    margin: 5px 10px;
+    padding: 5px;
+}
+
+button {
+    padding: 5px; border-radius: 15px; background: #39ff39; outline: none; border: 0; margin: 10px;
+}
+#elim {padding: 5px; border-radius: 15px; background: red; outline: none; border: 0; margin: 10px;}
+
+.completed .element {
+    border: 1px solid #000;
+    margin: 5px 10px;
+    padding: 5px;
+    background: #353535a0
+}

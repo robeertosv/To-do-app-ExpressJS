@@ -58,12 +58,6 @@ app.post('/api/delete', (req, res) => {
 
 //Añade a la lista de tareas completadas la tarea con el id requerido usando el método POST
 app.post('/api/complete', (req, res) => {
-    /*let elem = req.body.id
-    let a = tasks.splice(elem, 1);
-    completed.push(a)
-    newId--
-    res.status(202).json(completed)*/
-
     let idToDelete = req.body.id;
 
 

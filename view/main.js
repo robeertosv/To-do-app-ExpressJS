@@ -67,12 +67,12 @@ function erase(tid) {
 
     var raw = JSON.stringify(newT);
     var requestOptions = {
-        method: 'POST',
+        method: 'DELETE',
         headers: myHeaders,
         body: raw,
         redirect: 'follow'
     };
-    let res = fetch('http://localhost:3000/api/delete', requestOptions).then(() => window.location.reload())
+    let res = fetch('http://localhost:3000/api/tasks', requestOptions).then(() => window.location.reload())
 }
 
 function completedT(tid) {
@@ -84,10 +84,10 @@ function completedT(tid) {
 
     var raw = JSON.stringify(newT);
     var requestOptions = {
-        method: 'POST',
+        method: 'PUT',
         headers: myHeaders,
         body: raw,
         redirect: 'follow'
     };
-    let res = fetch('http://localhost:3000/api/complete', requestOptions).then(() => window.location.reload())
+    let res = fetch('http://localhost:3000/api/tasks', requestOptions).then(() => window.location.reload())
 }

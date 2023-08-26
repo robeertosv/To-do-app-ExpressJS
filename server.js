@@ -46,8 +46,8 @@ app.get('/api/complete', (req, res) => {
     res.json(completed)
 })
 
-//Elimina la tarea por id al acceder a /api/delete con POST
-app.post('/api/delete', (req, res) => {
+//Elimina la tarea por id al acceder a /api/tasks con DELETE
+app.delete('/api/tasks', (req, res) => {
 
     let idToDelete = req.body.id;
 
@@ -56,8 +56,8 @@ app.post('/api/delete', (req, res) => {
     res.status(202).json(tasks)
 })
 
-//Añade a la lista de tareas completadas la tarea con el id requerido usando el método POST
-app.post('/api/complete', (req, res) => {
+//Actualiza las listas de tasks y completed usando el metodo PUT al acceder a /api/tasks
+app.put('/api/tasks', (req, res) => {
     let idToDelete = req.body.id;
 
 

@@ -56,7 +56,7 @@ app.delete('/api/tasks', (req, res) => {
     res.status(202).json(tasks)
 })
 
-//Actualiza las listas de tasks y completed usando el metodo PUT al acceder a /api/tasks
+//Actualiza las listas de tasks y completed usando el método PUT al acceder a /api/tasks
 app.put('/api/tasks', (req, res) => {
     let idToDelete = req.body.id;
 
